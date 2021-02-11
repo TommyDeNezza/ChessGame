@@ -3,15 +3,15 @@ import javax.swing.*;
 public class Display extends Canvas
 	{
 	private static final long serialVersionUID = 1L;
-	private static Color darkSQ = new Color(255, 248, 200);
+	private static Color lightSQ = new Color(255, 248, 200);
 	public static void displayWindow()
 		{
 		Display canvas = new Display();
 		JFrame frame = new JFrame("Tony Hawk's Chess");
-		frame.getContentPane().addMouseListener(new ChessClickListener());
+		canvas.addMouseListener(new ChessClickListener());
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.setSize(826, 849);
-		frame.getContentPane().add(canvas).setBackground(darkSQ);
+		frame.getContentPane().add(canvas).setBackground(lightSQ);
 		frame.setLocationRelativeTo(null);
 		frame.setResizable(false);
 		frame.setVisible(true);

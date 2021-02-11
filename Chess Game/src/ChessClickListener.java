@@ -1,11 +1,27 @@
-import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
-public class ChessClickListener extends MouseAdapter
+public class ChessClickListener implements MouseListener
 	{
-	@Override
+
 	public void mouseClicked(MouseEvent e)
 		{
-		System.out.println(e.getX() + ", " + e.getY());
+		System.out.println(e.getX()+ ", "+ e.getY());
+		}
+	public void mousePressed(MouseEvent e)
+		{
+		
+		}
+	public void mouseReleased(MouseEvent e)
+		{
+
+		}
+	public void mouseEntered(MouseEvent e)
+		{
+
+		}
+	public void mouseExited(MouseEvent e)
+		{
+		
 		}
 	}
