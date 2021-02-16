@@ -3,7 +3,7 @@ import java.awt.event.MouseListener;
 
 public class ChessClickListener implements MouseListener
 	{
-
+	static String location;
 	public void mouseClicked(MouseEvent e)
 		{
 		System.out.println(e.getX()+ ", "+ e.getY());

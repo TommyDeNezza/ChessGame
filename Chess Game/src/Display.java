@@ -10,7 +10,7 @@ public class Display extends Canvas
 		JFrame frame = new JFrame("Tony Hawk's Chess");
 		canvas.addMouseListener(new ChessClickListener());
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		frame.setSize(826, 849);
+		frame.setSize(866, 888);
 		frame.getContentPane().add(canvas).setBackground(lightSQ);
 		frame.setLocationRelativeTo(null);
 		frame.setResizable(false);
