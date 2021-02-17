@@ -1,3 +1,4 @@
+package chess.board;
 import java.awt.*;
 import javax.swing.*;
 public class Display extends Canvas
