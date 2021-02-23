@@ -9,7 +9,6 @@ public class Rook extends Piece
 		{
 		super(white);
 		}
-
 	public boolean canMove(Board board, Spot start, Spot end)
 		{
 		if(end.getPiece().isWhite() == this.isWhite())

@@ -40,7 +40,10 @@ public class King extends Piece
 			//{
 			//return false;
 			//}
-		
+		else if(x == 1 && y == 1)
+			{
+			return true;
+			}
 		return false;
 		}
 	}
