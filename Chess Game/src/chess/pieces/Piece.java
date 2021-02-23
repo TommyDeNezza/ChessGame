@@ -5,7 +5,7 @@ import chess.board.*;
 public abstract class Piece
 	{
 	private boolean killed = false;
-	private boolean white = false;
+	private boolean white = true;
 	protected Piece(boolean white)
 		{
 		this.setWhite(white);
