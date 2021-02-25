@@ -5,26 +5,27 @@ import chess.board.*;
 public abstract class Piece
 	{
 	private boolean killed = false;
-	private boolean white = true;
-	protected Piece(boolean white)
+	protected boolean white = true;
+	public Piece(boolean white)
 		{
 		this.setWhite(white);
 		}
-	protected boolean isWhite()
+	public boolean isWhite()
 		{
 		return this.white;
 		}
-	protected void setWhite(boolean white)
+	public void setWhite(boolean white)
 		{
 		this.white = white;
 		}
-	protected boolean isKilled()
+	public boolean isKilled()
 		{
 		return this.killed;
 		}
-	protected void setKilled(boolean Killed)
+	public void setKilled(boolean Killed)
 		{
 		this.killed = killed;
 		}
 	public abstract boolean canMove(Board board, Spot start, Spot end);
+	public abstract String displayLetter();
 	}

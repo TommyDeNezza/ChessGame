@@ -14,18 +14,13 @@ public class King extends Piece
 		{
 		return this.castlingDone;
 		}
-	protected void setCastlingDone(boolean castlingDone)
-		{
-		this.castlingDone = castlingDone;
-		}
-	protected boolean isValidCastling(Board board, Spot start, Spot end)
-		{
-		
-		return false;
-		}
 	public boolean canMove(Board board, Spot start, Spot end)
 		{
-		if(end.getPiece().isWhite() == this.isWhite()) //checks the location being moved, and if there is a piece present sees if it is the same color as the piece being moved
+		if(end.getPiece() == null)
+			{
+			
+			}
+		else if(end.getPiece().isWhite() == this.isWhite()) //checks the location being moved, and if there is a piece present sees if it is the same color as the piece being moved
 			{
 			return false;
 			}
@@ -45,5 +40,13 @@ public class King extends Piece
 			return true;
 			}
 		return false;
+		}
+	public String displayLetter()
+		{
+		if(this.isWhite() == true)
+			{
+			return "K";
+			}
+		return "k";
 		}
 	}

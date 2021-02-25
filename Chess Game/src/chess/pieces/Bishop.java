@@ -9,7 +9,11 @@ public class Bishop extends Piece
 		}
 	public boolean canMove(Board board, Spot start, Spot end)
 		{
-		if(end.getPiece().isWhite() == this.isWhite())
+		if(end.getPiece() == null)
+			{
+			
+			}
+		else if(end.getPiece().isWhite() == this.isWhite())
 			{
 			return false;
 			}
@@ -17,5 +21,13 @@ public class Bishop extends Piece
 		int y = Math.abs(start.getY() - end.getY());
 		return x/y == 1;
 		}
-	
+	@Override
+	public String displayLetter()
+		{
+		if(this.isWhite() == true)
+			{
+			return "B";
+			}
+		return "b";
+		}
 	}
