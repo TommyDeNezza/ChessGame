@@ -38,7 +38,7 @@ public class Pawn extends Piece
 				return (y == 1 && x == -1 && end.getPiece().isWhite() != this.isWhite());
 				}
 			}
-		if(this.isWhite() == false && x > 0)
+		else if(this.isWhite() == false && x > 0)
 			{
 			if(x == 2 && end.getPiece() == null && start.getX() == 6 && Board.boxes[5][start.getY()].getPiece() == null && y == 0) //moving two spaces on first pawn move
 				{
